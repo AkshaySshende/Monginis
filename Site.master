@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    </head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                
+                    <img src="Image/BANNER1.jpg"  
+                        style="height: 234px; width: 960px; margin-left: 0px; margin-right: 0px;" />
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    DisappearAfter="600">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
+                        <asp:MenuItem  Text="Services">
+                            <asp:MenuItem NavigateUrl="Regular Cakes.aspx" Text="Regular Cakes"/>
+                            <asp:MenuItem NavigateUrl="Designer Cakes.aspx" Text="Designer Cakes"/>
+                            <asp:MenuItem NavigateUrl="Chocolate Cakes.aspx" Text="Chocolate Cakes"/>
+                            <asp:MenuItem NavigateUrl="Special Cakes.aspx" Text="Special Cakes"/>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/contactus.aspx" Text="Contactus"/>
+                        <asp:MenuItem NavigateUrl="~/Registration.aspx" Text="Registration"/>
+                         <asp:MenuItem NavigateUrl="~/Feedback.aspx" Text="Feedback"/>
+                         <asp:MenuItem NavigateUrl="~/Create Cake.aspx" Text="Create Cake"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                
+            </asp:ContentPlaceHolder>
+            
+        </div>
+        <div class="clear">
+        </div>
+     <div class="footer">
+        <center><p ><b>copyright @ Akshay shende & Anis Mulani</b></p> </center>
+					<p ><img src="Image\fb.png" height="30px" width="30px"/><b style="text-align:center;"> Monginis wai</b>				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<img src="Image\wp.png" height="28px" width="28px" /><b style="text-align:center;"> 9765162443/7057085889</b>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<img src="Image\insta.png" height="28px" width="28px"/><b style="text-align:center;"> Monginis_Wai</b>
+					</p>
+    </div>   
+    </div>
+    
+    </form>
+</body>
+</html>
